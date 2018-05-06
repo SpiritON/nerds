@@ -1,0 +1,47 @@
+body {
+	min-width: 1040px;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Arial", sans-serif;
+	color: #404040;
+	background-color: white;
+}
+
+.wrapper {
+	
+}
+
+.container	{
+	margin: 0 auto;
+	width: 900px;
+	outline: 1px solid red;
+}
+
+.container::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.header {
+	background-color: #eeeeee;
+}
+
+.header-logo {
+	float: left;
+	margin-top: 27px;
+	margin-right: 180px;
+	margin-bottom: 78px;
+	margin-left: 10px;
+	width: 138px;
+	height: 55px;
+}
+
+.header-logo img {
+	width: 138px;
+	height: 55px;
+}
+
+
