@@ -430,6 +430,24 @@ body {
 	display: table;
 }
 
+.button	{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #fb565a;
+	color: white;
+	width: 138px;
+	padding: 0;
+	text-align: center;
+	vertical-align: top;
+	line-height: 18px;
+	font-size: 12px;
+	border: 1px	solid #fb565a;
+	text-transform: uppercase;
+	border-radius: 4px;
+	padding: 9px 0;
+	margin: 0; 
+}
+
 /* start-header */
 
 .header {
@@ -576,24 +594,6 @@ body {
 	margin-top: 55px;
 }
 
-.button	{
-	display: inline-block;
-	text-decoration: none;
-	background-color: #fb565a;
-	color: white;
-	width: 138px;
-	padding: 0;
-	text-align: center;
-	vertical-align: top;
-	line-height: 18px;
-	font-size: 12px;
-	border: 1px	solid #fb565a;
-	text-transform: uppercase;
-	border-radius: 4px;
-	padding: 9px 0;
-	margin: 0; 
-}
-
 .slider-button {
 	width: 238px;
 }
@@ -643,10 +643,12 @@ body {
 }
 
 .order-item-image {
+	display: inline-block;
 	width: 240px;
 	height: 124px;
 	text-align: center;
 	line-height: 124px;
+	
 }
 
 .order-item-image img {
@@ -927,9 +929,11 @@ body {
 /*start-map*/
 
 .map {
+	margin: 0 auto;
 	background-image: url("../img/map1.png");
 	background-size: 1200px 416px;
-	height: 416px;
+	background-color: #e9e5dc;
+	width: 1200px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
