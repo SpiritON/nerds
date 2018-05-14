@@ -646,33 +646,36 @@ body {
 	margin-bottom: 10px;
 	margin-top: 60px;
 	text-transform: uppercase;
+	color: black;
 }
 
 .icon-basket {
 	color: #a6a6a6;
+	margin-right: 10px;
 }
 
 .header-main-nav a,
 .header-top-menu-truck a {
 	text-decoration: none;
+	color: black;
 }
 
 .header-main-nav a:hover,
 .header-top-menu-truck a:hover {
-	color: #f69093;
+	color: #fb565a;
 }
 
 .header-main-nav a:active,
 .header-top-menu-truck a:active {
-	color: #b7b7b7;
+	color: #a8a8a8;
 }
 
 .header-top-menu-truck a:hover i {
-	color: #f69093;
+	color: #fb565a;
 }
 
 .header-top-menu-truck a:active i {
-	color: #b7b7b7;
+	color: #a8a8a8;
 }
 
 
@@ -761,17 +764,19 @@ body {
 	position: absolute;
 	left: 445px;
 	bottom: 36px;
+
 }
 
 .slider-button:hover {
 	background-color: #d6494d;
 	border-color: #d6494d;
+
 }
 
 .slider-button:active {
 	background-color: #b63538;
 	border-color: #b63538;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
  }
 
 /* end-slider */
@@ -780,15 +785,6 @@ body {
 
 .order {
 	padding-top: 50px;
-}
-
-.order-container:after {
-	display: block;
-	content: "";
-	border-bottom: 2px	solid lightgrey;
-	width: 880px;
-	
-
 }
 
 .order-item {
@@ -842,7 +838,7 @@ body {
 .button-order--red:active {
 	background-color: #b63538;
 	border-color: #b63538;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
  }
 
  .button-order--green:hover {
@@ -853,7 +849,7 @@ body {
 .button-order--green:active {
 	background-color: #009053;
 	border-color: #009053;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
  }
 
   .button-order--orange:hover {
@@ -864,7 +860,7 @@ body {
 .button-order--orange:active {
 	background-color: #c09b24;
 	border-color: #c09b24;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
  }
 
 .order-item-title {
@@ -893,11 +889,16 @@ body {
 	border-color: #efc84a;	
 }
 
+.order:after {
+	display: block;
+	content: "";
+	border-top: 2px	solid lightgrey;
+	width: 880px;
+	margin: 0 auto;
+}
 /* end-order */
 
 /* start-about-us */
-
-
 
 .about-us-info {
 	width: 575px;
@@ -1021,25 +1022,17 @@ body {
 	font-size: 16px;
 }
 
-
+.our-work:after {
+	display: block;
+	content: "";
+	border-bottom: 2px	solid lightgrey;
+	width: 880px;
+	margin: 0 auto;
+}
 
 /*end-our-work*/
 
 /*start-partners*/
-
-.partners-logo:before	{
-	display: block;
-	content: "";
-	border-top: 2px	solid lightgrey;
-	width: 880px;
-}
-
-.partners-logo:after	{
-	display: block;
-	content: "";
-	border-top: 2px	solid lightgrey;
-	width: 880px;
-}
 
 .partners-logo {
 	margin-bottom: 85px; 
@@ -1094,6 +1087,14 @@ body {
 	opacity: 1;
 }
 
+.partners-logo:after	{
+	display: block;
+	content: "";
+	border-bottom: 2px solid lightgrey;
+	width: 880px;
+	margin: 0 auto;
+}
+
 /*end-partners*/
 
 /*start-map*/
@@ -1102,7 +1103,6 @@ body {
 	margin: 0 auto;
 	background-image: url("../img/map1.png");
 	background-color: #e9e5dc;
-	width: 1200px;
 	height: 415px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1123,7 +1123,8 @@ body {
 }
 
 .map-button {
-	width: 195px
+	width: 195px;
+	cursor: pointer;
 }
 
 .map-button:hover {
@@ -1134,7 +1135,7 @@ body {
 .map-button:active {
 	background-color: #b63538;
 	border-color: #b63538;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 }
 
 .map-info .map-title {
@@ -1160,6 +1161,10 @@ body {
 
 .map-phone {
 	margin-bottom: 25px;
+}
+
+.container-map {
+	position: relative;
 }
 
 
@@ -1209,7 +1214,7 @@ body {
 .footer-social-list a:active {
 	background-color: #d6494d;
 	border-color: #d6494d;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 }
 
 .footer-discount {
