@@ -11,20 +11,18 @@
 
 			<!--Header-->
 			<div class="header">
-				<div class="container">
+				<div class="container clearfix">
 					<div class="header-logo">
-						<img src="img/main-logo.png" width="138" height="55" alt="Nerds">
+						<img src="img/main-logo.png" width="139" height="56" alt="Nerds">
 					</div>
-					<div class="header-top-menu">
-						<ul class="header-main-nav">
-							<li><a href="#">Студия</a></li>
-							<li><a href="#">Клиенты</a></li>
-							<li><a href="#">Магазин</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-						<div class="header-top-menu-truck">
-							<a href="#"><img src="img/icon-basket.png">Корзина</a>
-						</div>
+					<ul class="header-main-nav clearfix">
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="header-top-menu-truck">
+						<a href="#"><i class="icon-basket"></i>Корзина</a>
 					</div>
 				</div>
 			</div>
@@ -32,56 +30,103 @@
 			<!--Slider-->
 			<div class="slider">
 				<div class="container">
-					<div class="slider-info">
-						<h1 class="slider-title">Долго, дорого, скрупулезно.</h1>
-						<p class="slider-text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.<p>
-						<a class="button slider-button" href="#">Узнать больше</a>
+
+					<div class="slider-item clearfix">
+						<div class="slider-info">
+							<p class="slider-title">Долго, дорого, скрупулезно.</p>
+							<p class="slider-text">Математически выверенный дизайн <br>
+							для вашего сайта или мобильного приложения.</p>
+							<div class="slider-button-radio clearfix">
+								<a class="button slider-button" href="#">Узнать больше</a>
+								<div class="slider-switcher">
+									<img src="img/slider-switcher.png" width="48" height="10" alt="switcher">
+								</div>
+								<div class="slider-indicator-adaptive">
+									<img src="img/slider-indicator.png" width="4" height="4" alt="indicator">
+								</div>
+							</div>
+						</div>
+						<div class="slider-image">
+							<img src="img/adaptive.png" width="338" height="231" alt="adaptive">
+						</div>
 					</div>
-					<div class="slider-radio">
-						<img src="img/slider indicator.png" width="48" height="10" alt="indicator">
+
+					<div class="slider-item clearfix hide">
+						<div class="slider-info">
+							<p class="slider-title">Любите ли вы математику, как любим ее мы?</p>
+							<p class="slider-text">Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать</p>
+							<div class="slider-button-radio clearfix">
+								<a class="button slider-button" href="#">Узнать больше</a>
+								<div class="slider-switcher">
+									<img src="img/slider-switcher.png" width="48" height="10" alt="switcher">
+								</div>
+								<div class="slider-indicator-calc">
+									<img src="img/slider-indicator.png" width="4" height="4" alt="indicator">
+								</div>
+							</div>
+						</div>
+						<div class="slider-image slider-image-calc">
+							<img src="img/calc.png" width="230" height="249" alt="calculator">
+						</div>
 					</div>
-					<div class="slider-image">
-						<img src="img/adaptive.png" width="338" height="231" alt="adaptive">
+
+					<div class="slider-item clearfix hide">
+						<div class="slider-info">
+							<p class="slider-title">Только-наркотики,<br> только хардкор!</p>
+							<p class="slider-text">Все дизайнерские решения в нашей компании принимаются только под воздейтвием качественных галлюциногенов</p>
+							<div class="slider-button-radio clearfix">
+								<a class="button slider-button" href="#">Узнать больше</a>
+								<div class="slider-switcher">
+									<img src="img/slider-switcher.png" width="48" height="10" alt="switcher">
+								</div>
+								<div class="slider-indicator-robot">
+									<img src="img/slider-indicator.png" width="4" height="4" alt="indicator">
+								</div>
+							</div>
+						</div>
+						<div class="slider-image slider-image-robot">
+							<img src="img/narco-robot.png" width="333" height="319" alt="robot">
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<!--Order-->
 			<div class="order">
-				<div class="container">
-					<div class="order-item order-item--red">
-						<div class="order-item-image" >
-							<img src="img/pc.png" width="136"	height="80" alt="pc">
+				<div class="container order-container clearfix">
+						<div class="order-item order-item--red">
+							<div class="order-item-image" >
+								<img src="img/pc.png" width="136"	height="80" alt="pc">
+							</div>
+							<h2 class="order-item-title">Веб-сайты</h2>
+							<p class="order-item-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+							<a class="button button-order--red" href="#">Заказать</a>
 						</div>
-						<h2 class="order-item-title">Веб-сайты</h2>
-						<p class="order-item-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-						<a class="button button-order--red" href="#">Заказать</a>
+						<div class="order-item order-item--green">
+							<div class="order-item-image" >
+								<img src="img/phone.png" width="103" height="91" alt="phone">
+							</div>
+								<h2 class="order-item-title">Приложения</h2>
+								<p class="order-item-text">Покорите топ-10 приложений в Appstore и Google Play</p>
+								<a class="button button-order--green" href="#">Заказать</a>
+							</div>
+						<div class="order-item order-item--orange">
+							<div class="order-item-image" >
+								<img src="img/presentation.png" width="84" height="77" alt="presentation">
+							</div>
+							<h2 class="order-item-title">Презентации</h2>
+							<p class="order-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+							<a class="button button-order--orange" href="#">Заказать</a>
+						</div>
 					</div>
-					<div class="order-item order-item--green">
-						<div class="order-item-image" >
-							<img src="img/phone.png" width="103" height="91" alt="phone">
-						</div>
-							<h2 class="order-item-title">Приложения</h2>
-							<p class="order-item-text">Покорите топ-10 приложений в Appstore и Google Play</p>
-							<a class="button button-order--green" href="#">Заказать</a>
-						</div>
-					<div class="order-item order-item--orange">
-						<div class="order-item-image" >
-							<img src="img/presentation.png" width="84" height="77" alt="presentation">
-						</div>
-						<h2 class="order-item-title">Презентации</h2>
-						<p class="order-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-						<a class="button button-order--orange" href="#">Заказать</a>
-					</div>
-				</div>
 			</div>
 
 			<!--About-us-->
 			<div class="about-us">
-				<div class="container">
+				<div class="container clearfix">
 					<div class="about-us-info">
 							<h2 class="about-us-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
-							<p class="about-us-text">Исповедуем принцыпы минимализма и чистоты. Ставим математичейский расчет выше креатива. Работаем не покладая рук, как роботы. </p>
+							<p class="about-us-text">Исповедуем принцыпы минимализма и чистоты. Ставим математичейский расчет выше креатива. Работаем не покладая рук, как роботы.</p>
 					</div>
 					<div class="about-us-logo">
 						<div class="image-logo">
@@ -96,10 +141,10 @@
 
 			<!--Our-work-->
 			<div class="our-work">
-				<div class="container">
+				<div class="container clearfix">
 					<div class="our-work-job">
-						<h2 class="our-job-title">Выполянем заказы на разработку</h2>
-						<ul class="our-list our-work-job">
+						<p class="our-job-title">Выполянем заказы на разработку</p>
+						<ul class="our-list our-work-job clearfix">
 							<li>Веб-сайтов любой сложности</li>	
 							<li>Мобильных приложений для IOS и Android</li>
 							<li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -107,8 +152,8 @@
 					</div>
 
 					<div class="our-work-how">
-						<h2 class="our-how-title">Как мы работаем</h2>
-						<ul class="our-list our-work-how">
+						<p class="our-how-title">Как мы работаем</p>
+						<ul class="our-list our-work-how clearfix">
 							<li>С самоотдачей 146%</li>
 							<li>Соблюдая сроки на 100%</li>	
 							<li>По предоплате 50%</li>
@@ -120,7 +165,7 @@
 			<!--Partners-->		
 			<div class="partners">
 				<div class="container">
-					<div class="partners-logo">
+					<div class="partners-logo clearfix">
 						<a class="partners-glukhanko" href="#"><img src="img/glukhanko.png" width="198" height="37" alt="glukhanko"></a>
 						<a class="partners-academy" href="#"><img src="img/html-academy.png" width="199" height="50" alt="html-academy"></a>
 						<a class="partners-borodinski" href="#"><img src="img/borodinski.png" width="209" height="87" alt="borodinski"></a>
@@ -131,7 +176,7 @@
 
 			<!--Map-->
 			<div class="map">
-				<div class="container">
+				<div class="container clearfix">
 					<div class="map-info">
 						<p class="map-title">Nёrds design studio</p>
 						<p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -140,24 +185,20 @@
 							<span>Напишите нам</span>
 						</div>
 					</div>
-					<div class="map-logo">
-						<img src="img/footer-logo.png" width="231" height="190" alt="map-logo">
-					</div>
 				</div>			
 			</div>
 
 
 			<!--Footer-->
 			<div class="footer">
-				<div class="container">
+				<div class="container clearfix">
 					<div class="footer-content">
-					<div class="footer-social">
-							<ul class="footer-social-list">
-								<li><a class="social-vk" href="#"><i class="icon-vkontakte"></i></a></li>
-								<li><a class="social-fb" href="#"><i class="icon-facebook"></i></a></li>
-								<li><a class="social-ins" href="#"><i class="icon-instagram"></i></a></li>
-							</ul>
-						</div>
+						<ul class="footer-social-list clearfix">
+							<li><a class="social-vk" href="#"><i class="icon-vkontakte"></i></a></li>
+							<li><a class="social-fb" href="#"><i class="icon-facebook"></i></a></li>
+							<li><a class="social-ins" href="#"><i class="icon-instagram"></i></a></li>
+						</ul>
+						
 						<div class="footer-discount">
 							<p class="footer-title">Давайте дружить, это выгодно!</p>
 							<p class="footer-text">Скидка 10% для друзей из социальных сетей</p>
@@ -168,4 +209,5 @@
 		</div>
 	</body>
 </html>
+
 
