@@ -607,7 +607,7 @@ body {
 
 .header-logo {
 	float: left;
-	margin-top: 25px;
+	margin-top: 32px;
 	width: 139px;
 	height: 56px;
 	margin-bottom: 10px;
@@ -1106,6 +1106,7 @@ body {
 	height: 415px;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
 .map .container {
