@@ -1243,3 +1243,134 @@ body {
 
 /*end-footer*/
 
+/*popup*/
+
+.popup {
+	width: 460px;
+	min-height: 313px;
+	background-color: white;
+	padding: 55px 90px 48px 80px;
+	margin: 0 auto;
+	box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.popup-form {
+	width: 460px;
+	min-height: 262px;
+}
+
+.popup-name,
+.popup-email {
+	float: left;
+	width: 220px;
+}
+
+.popup-name {
+	margin-right: 20px;
+}
+
+.popup-form-group input, textarea{
+	width: 186px;
+	padding: 0;
+	height: 34px;
+	border: none;
+	outline: none;
+	border: 2px solid #d7dcde;
+	font-size: 12px;
+	border-radius: 2px;
+	color: black;
+	margin-bottom: 20px;
+	padding: 0 15px;
+}
+
+.popup-form-group input:hover, textarea:hover {
+	border-color: #a2a9ac; 
+}
+
+.popup-form-group input:focus, textarea:focus {
+	border-color: #56bffb; 
+}
+
+.popup-message textarea {
+	max-width: 426px;
+	min-width: 426px;
+	width: 426px;
+	min-height: 86px;
+	height: 86px;
+	padding: 15px;
+}
+
+.popup-email .popup-name {
+	width: 220px;
+}
+
+.popup-button {
+	margin-top: 10px;
+}
+
+.popup-button input {
+	width: 220px;
+	float: left;
+	border: none;
+	outline: none;
+}
+
+.button-cancel {
+	width: 220px;
+	float: left;
+	background-color: #f1f1f1;
+	color: black;
+	cursor: pointer;
+}
+
+.button-cancel:hover {
+	background-color: #e5e5e5;
+}
+
+.button-cancel:active {
+	background-color: #d5d5d5;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
+}
+
+.button-send {
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.button-send:hover {
+	background-color: #d6494d;
+}
+
+.button-send:active {
+	background-color: #b63538;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
+}
+
+.button-exit {
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	background-color: #fb565a;
+	top: 10px;
+	right: 10px;
+	border-radius: 50%;
+}
+
+.button-exit:hover {
+	background-color: #d6494d;
+}
+
+.button-exit:active {
+	background-color: #b63538;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
+}
+
+.button-exit img {
+	position: absolute;
+	left: 13px;
+	top: 13px;
+}
+
+/*end-popup*/
