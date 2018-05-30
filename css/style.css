@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic');*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic');*/
 @font-face { 
 font-family: 'Roboto-Black'; 
 src: url('../fonts/Roboto/Roboto-Black.eot?#iefix') format('embedded-opentype'), 
@@ -707,9 +707,12 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 
 /* start-slider */
 
+.slider-item {
+	position: relative;
+}
+
 .slider {
 	background-color: #eeeeee;
-	
 }
 
 .slider-info {
@@ -743,7 +746,7 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 	height: 320px;
 }
 
-.slider-image-calc img{
+.owl-carousel .owl-item .slider-image-calc img{
 	margin-left: 110px;
 	margin-top: 5px;
 	width: 230px;
@@ -1146,6 +1149,12 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 .map-button {
 	width: 195px;
 	cursor: pointer;
+	display: block;
+}
+
+.map-button a {
+	text-decoration: none;
+	color: #ffffff;
 }
 
 .map-button:hover {
@@ -1422,6 +1431,7 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 	background-color: #f1f1f1;
 	position: relative;
 	margin-bottom: 15px;
+	border-radius: 5px;
 }
 
 .price-pointer:after {
@@ -1584,6 +1594,10 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 	margin-right: 0;
 }
 
+.radio .radio-label {
+	cursor: pointer;
+}
+
  /*radio*/
 
 /*checkbox*/
@@ -1595,12 +1609,12 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 	padding-left: 35px;
 	margin-bottom: 12px;
 	cursor: pointer;
+	max-width: 140px;
 }
 /* Hide the browser's default checkbox */
 .features-label input {
 	position: absolute;
 	opacity: 0;
-	cursor: pointer;
 }
 /* Create a custom checkbox */
 .checkmark {
@@ -1651,12 +1665,8 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 	display: inline-block;
 	border-color: #efefef;
 }
-/*Узнать как при  disabled поменять цвет рамки*/
-.features-label {
-	
-	width: 140px; 
-	max-width: 140px;
-}
+
+
 
 .filter-features {
 	margin-bottom: 45px;
@@ -1665,8 +1675,8 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 /*end-checkbox*/
 
 /*form-buttom*/
-.form-button input{
-	width: 154px;
+.form-button button {
+	width: 153px;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -1674,11 +1684,11 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 	color: black;
 }
 
-.form-button input:hover {
+.form-button button:hover {
 	background-color: #e5e5e5;
 }
 
-.form-button input:active {
+.form-button button:active {
 	background-color: #d5d5d5;
 }	
 
@@ -1697,7 +1707,8 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 	margin-right: 40px;
 	margin-top: 8px;
 }
-.catalog-items-sorting p, a {
+.catalog-items-sorting p, 
+.catalog-items-sorting a {
 	text-transform: uppercase;
 	font-size: 12px;
 	line-height: 18px;
@@ -1739,6 +1750,7 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 .catalog-items-switch i:before {
 	margin: 0;
 	width: 12px;
+	font-size: 24px;
 }
 
 .catalog-items-switch a {
@@ -1770,7 +1782,7 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 
 /*catalog-items-cards*/
 
-.item-cards {
+.item-cards  {
 	float: left;
 	margin-right: 80px;
 	margin-bottom: 80px;
@@ -1778,41 +1790,53 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 	background-color: #f1f1f1;
 	border-radius: 7px 7px 0 0;
 	width: 240px;
+	height: 270px;
+}
+
+.item-cards .item-cards-image {
+	width: 240px;
 	height: 240px;
 	padding-top: 30px;
+	display: block;
 }
 
 .item-cards-price {
-	min-width: 140px;
-	max-width: 140px;
-	min-height: 135px;
+	width: 200px;
+	height: 200px;
 	background-color: white;
 	position: absolute;
 	left: 20px;
 	top: 50px;
 	text-align: center;
-	padding: 35px 30px 30px 30px;
-	display: none;
+	opacity: 0;
+	
 }
 
-.item-cards-price p {
+.cards-price-disc {
+	height: 132px;
+}
+
+.cards-price-disc p {
 	line-height: 18px;
 	margin: 0;
+	display: inline-block;
+	height: 36px;
+	overflow: hidden;
 }
 
-.item-cards-price .price-title {
+.cards-price-disc .price-title {
 	text-transform: uppercase;
 	font-size: 18px;
-	margin-bottom: 16px;
+	margin-top: 35px;
 }
 
-.item-cards-price .price-disc {
+.cards-price-disc .price-disc {
 	font-size: 14px;
-	margin-bottom: 30px;
 }
 
 .item-cards:hover .item-cards-price {
-	display: block;
+	opacity: 1;
+	transition: opacity 0.3s;
 }
 
 .item-cards:hover {
@@ -1827,39 +1851,14 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 	background-color: #b63538;
 }
 
-.item-cards:after {
-	display: block;
-	content: "";
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: white;
-	position: absolute;
-	left: 10px;
-	top: 10px;
-}
-
-.item-cards:before {
-	display: block;
-	content: "";
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: white;
-	position: absolute;
-	left: 27px;
-	top: 10px;
-}
-
 .item-cards a:after {
 	display: block;
 	content: "";
-	width: 10px;
+	background: url("../img/dots.png") repeat-x;
+	width: 45px;
 	height: 10px;
-	border-radius: 50%;
-	background-color: white;
 	position: absolute;
-	left: 44px;
+	left: 10px;
 	top: 10px;
 }
 
@@ -1917,16 +1916,16 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
 }
 
-.catalog-pagination-list .current {
+.catalog-pagination-list .current a {
 	background-color: white;
 	width: 34px;
-	height: 34px;
+	min-height: 30px;
 	border: 2px solid #f1f1f1;
 	line-height: 34px;
 }
 
-.catalog-pagination-list .next{
+.catalog-pagination-list .next a {
 	width: 140px;
 }
 
-/*end-catalog-pagination*/
+/*end-catalog-pagination

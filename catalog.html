@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 			<title>Nerds-Catalog</title>
 			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
 	</head>
 
 	<body>
@@ -13,12 +14,12 @@
 			<div class="header">
 				<div class="container clearfix">
 					<div class="header-logo">
-						<img src="img/main-logo.png" width="139" height="56" alt="Nerds">
+						<a href="index.html"><img src="img/main-logo.png" width="139" height="56" alt="Nerds"></a>
 					</div>
 					<ul class="header-main-nav clearfix">
 						<li><a href="#">Студия</a></li>
 						<li><a href="#">Клиенты</a></li>
-						<li><a href="../nerds/catalog.html">Магазин</a></li>
+						<li><a href="catalog.html">Магазин</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
 					<div class="header-top-menu-truck">
@@ -104,7 +105,7 @@
 							</div>
 
 							<div class="form-button">
-								<input type="submit" class="button button-show" value="Показать">
+								<button type="submit" class="button button-show">Показать</button>
 							</div>
 
 						</form>
@@ -126,50 +127,62 @@
 						<div class="catalog-items-cards clearfix">
 							
 							<div class="item-cards">
-								<a href="#1"><img src="img/aviator.png" height="240" width="240" alt="aviator"></a>
+								<a class="item-cards-image" href="#1"><img src="img/aviator.png" height="240" width="240" alt="aviator"></a>
 								<div class="item-cards-price">
-									<p class="price-title">Sunset</p>
-									<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									<div class="cards-price-disc">
+										<p class="price-title">Sunset</p>
+										<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									</div>
 									<a class="button order-price-button" href="#">10 000 Р.</a>
 								</div>
 							</div>
 							<div class="item-cards">
-								<a href="#2"><img src="img/beach.png" height="240" width="240" alt="beach"></a>
+								<a class="item-cards-image" href="#2"><img src="img/beach.png" height="240" width="240" alt="beach"></a>
 								<div class="item-cards-price">
-									<p class="price-title">Sunset</p>
-									<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									<div class="cards-price-disc">
+										<p class="price-title">Sunset</p>
+										<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									</div>
 									<a class="button order-price-button" href="#">10 000 Р.</a>
 								</div>
 							</div>
 							<div class="item-cards">
-								<a href="#3"><img src="img/forte.png" height="240" width="240" alt="forte"></a>
+								<a class="item-cards-image" href="#3"><img src="img/forte.png" height="240" width="240" alt="forte"></a>
 								<div class="item-cards-price">
-									<p class="price-title">Sunset</p>
-									<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									<div class="cards-price-disc">
+										<p class="price-title">Sunset</p>
+										<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									</div>
 									<a class="button order-price-button" href="#">10 000 Р.</a>
 								</div>
 							</div>
 							<div class="item-cards">
-								<a href="#4"><img src="img/kitchen.png" height="240" width="240" alt="kitchen"></a>
+								<a class="item-cards-image" href="#4"><img src="img/kitchen.png" height="240" width="240" alt="kitchen"></a>
 								<div class="item-cards-price">
-									<p class="price-title">Sunset</p>
-									<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									<div class="cards-price-disc">
+										<p class="price-title">Sunset</p>
+										<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									</div>
 									<a class="button order-price-button" href="#">10 000 Р.</a>
 								</div>
 							</div>
 							<div class="item-cards">
-								<a href="#5"><img src="img/avenue.png" height="240" width="240" alt="avenue"></a>
+								<a class="item-cards-image" href="#5"><img src="img/avenue.png" height="240" width="240" alt="avenue"></a>
 								<div class="item-cards-price">
-									<p class="price-title">Sunset</p>
-									<p class="price-disc">Интернет-магазин с личным кабинетом</p>	
+									<div class="cards-price-disc">
+										<p class="price-title">Sunset</p>
+										<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									</div>
 									<a class="button order-price-button" href="#">10 000 Р.</a>
 								</div>
 							</div>
 							<div class="item-cards">
-								<a href="#6"><img src="img/dovetail.png" height="240" width="240" alt="dovetail"></a>
+								<a class="item-cards-image" href="#6"><img src="img/dovetail.png" height="240" width="240" alt="dovetail"></a>
 								<div class="item-cards-price">
-									<p class="price-title">Sunset</p>
-									<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									<div class="cards-price-disc">
+										<p class="price-title">Sunset</p>
+										<p class="price-disc">Интернет-магазин с личным кабинетом</p>
+									</div>
 									<a class="button order-price-button" href="#">10 000 Р.</a>
 								</div>
 							</div>
@@ -177,10 +190,10 @@
 						</div>
 						<div class="catalog-pagination clearfix">
 						<ul class="catalog-pagination-list clearfix">
-							<li><a class="current" href="#1">1</a></li>
+							<li class="current"><a href="#1">1</a></li>
 							<li><a href="#2">2</a></li>
 							<li><a href="#3">3</a></li>
-							<li><a class="next" href="#next">cледующая</a></li>
+							<li class="next"><a href="#next">cледующая</a></li>
 						</ul>
 					</div>	
 					</div>
@@ -196,9 +209,7 @@
 						<p class="map-title">Nёrds design studio</p>
 						<p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						<p class="map-phone">тел. +7 (812) 275-75-75</p>
-						<div class="button map-button">
-							<span>Напишите нам</span>
-						</div>
+						<a class="popup-modal button map-button" href="#write-us">Напишите нам</a>
 					</div>
 				</div>			
 			</div>
@@ -223,7 +234,7 @@
 
 			<!-- Popup -->
 			
-			<div class="popup hide">
+			<div id="write-us" class="popup white-popup-block mfp-hide">
 				<form class="popup-form" action="#" method="post">
 					<div class="clearfix">
 						<div class="popup-form-group popup-name">
@@ -232,7 +243,7 @@
 						</div>
 						<div class="popup-form-group popup-email">
 							<label for="email">Ваш e-mail:</label>
-							<input type="email" name="user-email" id="email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">	
+							<input type="email" name="user-email" id="email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
 						</div>
 					</div>
 					<div class="popup-form-group popup-message ">
@@ -241,17 +252,20 @@
 					</div>
 					<div class="popup-button clearfix">
 						<input type="submit" class="button button-send" value="Отправить">
-						<div class="button button-cancel">
+						<div class="button button-cancel popup-modal-dismiss">
 							<span>Отменить</span>
 						</div>
 					</div>
 				</form>
-				<div class="button-exit">
+				<div class="button-exit popup-modal-dismiss">
 					<img src="img/cross.png" width="16" height="16" alt="exit">
 				</div>
 			</div>
-			
-
+		
 		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.magnific-popup.js"></script>
+		<script src="js/common.js"></script>	
 	</body>
 </html>

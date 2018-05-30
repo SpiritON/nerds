@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 			<title>Nerds</title>
 			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
 	</head>
 
 	<body>
@@ -28,65 +30,50 @@
 			</div>
 
 			<!--Slider-->
-			<div class="slider">
+			<div class="slider ">
 				<div class="container">
+					<div class="owl-carousel">
 
-					<div class="slider-item clearfix">
-						<div class="slider-info">
-							<p class="slider-title">Долго, дорого, скрупулезно.</p>
-							<p class="slider-text">Математически выверенный дизайн <br>
-							для вашего сайта или мобильного приложения.</p>
-							<div class="slider-button-radio clearfix">
-								<a class="button slider-button" href="#">Узнать больше</a>
-								<div class="slider-switcher">
-									<img src="img/slider-switcher.png" width="48" height="10" alt="switcher">
-								</div>
-								<div class="slider-indicator-adaptive">
-									<img src="img/slider-indicator.png" width="4" height="4" alt="indicator">
+						<div class="slider-item clearfix">
+							<div class="slider-info">
+								<p class="slider-title">Долго, дорого, скрупулезно.</p>
+								<p class="slider-text">Математически выверенный дизайн <br>
+								для вашего сайта или мобильного приложения.</p>
+								<div class="slider-button-radio clearfix">
+									<a class="button slider-button" href="#">Узнать больше</a>
 								</div>
 							</div>
-						</div>
-						<div class="slider-image">
-							<img src="img/adaptive.png" width="338" height="231" alt="adaptive">
-						</div>
-					</div>
-
-					<div class="slider-item clearfix hide">
-						<div class="slider-info">
-							<p class="slider-title">Любите ли вы математику, как любим ее мы?</p>
-							<p class="slider-text">Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать</p>
-							<div class="slider-button-radio clearfix">
-								<a class="button slider-button" href="#">Узнать больше</a>
-								<div class="slider-switcher">
-									<img src="img/slider-switcher.png" width="48" height="10" alt="switcher">
-								</div>
-								<div class="slider-indicator-calc">
-									<img src="img/slider-indicator.png" width="4" height="4" alt="indicator">
-								</div>
+							<div class="slider-image">
+								<img src="img/adaptive.png" width="338" height="231" alt="adaptive">
 							</div>
 						</div>
-						<div class="slider-image slider-image-calc">
-							<img src="img/calc.png" width="230" height="249" alt="calculator">
-						</div>
-					</div>
 
-					<div class="slider-item clearfix hide">
-						<div class="slider-info">
-							<p class="slider-title">Только-наркотики,<br> только хардкор!</p>
-							<p class="slider-text">Все дизайнерские решения в нашей компании принимаются только под воздейтвием качественных галлюциногенов</p>
-							<div class="slider-button-radio clearfix">
-								<a class="button slider-button" href="#">Узнать больше</a>
-								<div class="slider-switcher">
-									<img src="img/slider-switcher.png" width="48" height="10" alt="switcher">
-								</div>
-								<div class="slider-indicator-robot">
-									<img src="img/slider-indicator.png" width="4" height="4" alt="indicator">
+						<div class="slider-item clearfix">
+							<div class="slider-info">
+								<p class="slider-title">Любите ли вы математику, как любим ее мы?</p>
+								<p class="slider-text">Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать</p>
+								<div class="slider-button-radio clearfix">
+									<a class="button slider-button" href="#">Узнать больше</a>
 								</div>
 							</div>
+							<div class="slider-image slider-image-calc">
+								<img src="img/calc.png" width="230" height="249" alt="calculator">
+							</div>
 						</div>
-						<div class="slider-image slider-image-robot">
-							<img src="img/narco-robot.png" width="333" height="319" alt="robot">
+
+						<div class="slider-item clearfix">
+							<div class="slider-info">
+								<p class="slider-title">Только-наркотики,<br> только хардкор!</p>
+								<p class="slider-text">Все дизайнерские решения в нашей компании принимаются только под воздейтвием качественных галлюциногенов</p>
+								<div class="slider-button-radio clearfix">
+									<a class="button slider-button" href="#">Узнать больше</a>
+								</div>
+							</div>
+							<div class="slider-image slider-image-robot">
+								<img src="img/narco-robot.png" width="333" height="319" alt="robot">
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -180,9 +167,7 @@
 						<p class="map-title">Nёrds design studio</p>
 						<p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						<p class="map-phone">тел. +7 (812) 275-75-75</p>
-						<div class="button map-button">
-							<span>Напишите нам</span>
-						</div>
+						<a class="popup-modal button map-button" href="#write-us">Напишите нам</a>
 					</div>
 				</div>			
 			</div>
@@ -207,8 +192,7 @@
 			</div>
 
 			<!-- Popup -->
-			
-			<div class="popup hide">
+			<div id="write-us" class="popup white-popup-block mfp-hide">
 				<form class="popup-form" action="#" method="post">
 					<div class="clearfix">
 						<div class="popup-form-group popup-name">
@@ -226,16 +210,22 @@
 					</div>
 					<div class="popup-button clearfix">
 						<input type="submit" class="button button-send" value="Отправить">
-						<div class="button button-cancel">
+						<div class="button button-cancel popup-modal-dismiss">
 							<span>Отменить</span>
 						</div>
 					</div>
 				</form>
-				<div class="button-exit">
+				<div class="button-exit popup-modal-dismiss">
 					<img src="img/cross.png" width="16" height="16" alt="exit">
 				</div>
 			</div>
 		</div>
+
+
+		<script src="js/jquery.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/jquery.magnific-popup.js"></script>
+		<script src="js/common.js"></script>
 	</body>
 </html>
 
